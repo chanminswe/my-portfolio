@@ -7,11 +7,20 @@
     margin: 5px;
 }
 
-.nav-container > p:first-child {
+.my-name {
     margin-right: auto;
-      
 }
 
-.nav-container > p {
-    margin: 0px 20px 0px;
+.desktop-nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-nav-container > p {
+    margin: 0px 20px  0px;
+}
+
+
+.bars-icon {
+    margin-right: 20px;
 }

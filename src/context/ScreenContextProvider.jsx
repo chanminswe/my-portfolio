@@ -1,16 +1,34 @@
-import React, { useEffect, useState } from "react";
+    import React, { createContext, useEffect, useState } from "react";
 
-function ScreenContextProvider() {
-  const [screenSize, setScreenSize] = useState({
-    screenWidth: window.innerWidth,
-    screenHeight: window.innerHeight,
-  });
+    export const ScreenContext = createContext();
 
-  useEffect(() => {
-    
-  }, []);
+    function ScreenContextProvider({ children }) {
+    const [screenSize, setScreenSize] = useState({
+        screenWidth: window.innerWidth,
+        screenHeight: window.innerHeight,
+    });
 
-  return <div>ScreenContextProvider</div>;
-}
+    //basically to readjust screenSize whenever needed
+    useEffect(() => {
+        function adjustScreen() {
+        setScreenSize({
+            screenWidth: window.innerWidth,
+            screenHeight: window.innerHeight,
+        });
+        }
 
-export default ScreenContextProvider;
+        window.addEventListener("resize", adjustScreen);
+
+        return () => {
+        window.removeEventListener("resize", adjustScreen);
+        };
+    }, []);
+
+    return (
+        <ScreenContext.Provider value={{ screenSize }}>
+        {children}
+        </ScreenContext.Provider>
+    );
+    }
+
+    export default ScreenContextProvider;
