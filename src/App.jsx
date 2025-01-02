@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import ScreenContextProvider from "./context/ScreenContextProvider";
+import Profile from "./components/Profile";
 
 function App() {
   return (
-    <ScreenContextProvider>
+    <>
       <Navbar />
-    </ScreenContextProvider>
+      <Profile />
+    </>
   );
 }
 

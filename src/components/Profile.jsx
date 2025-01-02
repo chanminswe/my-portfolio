@@ -1,10 +1,8 @@
 import React from "react";
-import "../styles/Profile";
+import "../styles/Profile.css";
 
 function Profile() {
-  return <div className="profile-container">
-        
-  </div>;
+  return <div className="profile-container">profile</div>;
 }
 
 export default Profile;
