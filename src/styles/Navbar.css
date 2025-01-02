@@ -1,0 +1,16 @@
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: 20px;
+    padding: 5px 20px 0px;
+}
+
+.nav-container:first-child {
+    margin-left: auto;
+}
+
+.nav-container > p {
+    margin: 0px 20px 0px;
+}
