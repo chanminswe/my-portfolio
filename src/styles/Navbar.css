@@ -39,6 +39,9 @@
 
     border: 1px solid black;
     border-radius: 3px;
+
+    background-color: rgb(236, 234, 234);
+    z-index: 999;
 }
 
 .dropdown-item{
