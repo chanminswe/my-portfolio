@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/Profile.css";
 
+//https://portfolio-for-alex.vercel.app/
+
+
 function Profile() {
   return (
     <div className="profile-container">
@@ -26,7 +29,7 @@ function Profile() {
         <button className="github-button">View Github</button>
         <button className="cv-button">Download CV</button>
       </div>
-      <h3 style={{width: '100%' ,textAlign:'center' , marginTop:'30px' , color:'gray'}}>Technologies I'm Familiar with</h3>
+      <h3 style={{width: '100%' ,textAlign:'center' , marginTop:'30px' , color:'gray'}}>My Tech Stack</h3>
       <Technology />
     </div>
   );

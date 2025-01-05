@@ -1,5 +1,42 @@
 .project-container{
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgb(188, 38, 38) ;
 }
+
+.portfolio-project{
+    width: 90%;
+    height: 300px;
+    max-height: 300px;
+}
+
+.alex-portfolio-image{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+.slide-in{
+    animation: slideIn 0.3s ease-in-out;
+}
+
+
+
