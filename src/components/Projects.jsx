@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../styles/Projects.css";
+import { ScreenContext } from "../context/ScreenContextProvider";
 
 function Projects() {
+  const { screenSize } = useContext(ScreenContext);
+
   const [alexIndex, setAlexIndex] = useState(0);
-  const [shouldAnimate, setShouldAnimate] = useState("false");
   const alexImages = [
     "./images/alex-home.png",
     "./images/alex-project.png",
@@ -20,15 +22,6 @@ function Projects() {
     }, 3000);
   }
 
-  function picutureEffect() {
-    setTimeout(() => {
-      setShouldAnimate(!shouldAnimate);
-    }, 2000);
-  }
-
-  //for pictures
-  picutureEffect();
-
   //for index
   changePicture();
 
@@ -36,13 +29,26 @@ function Projects() {
     <div className="project-container">
       <div className="portfolio-project">
         <img
-          className={`alex-portfolio-image ${shouldAnimate ? `slide-in` : ``}`}
+          className={`alex-portfolio-image`}
           alt="alex-portfolio-image"
           src={alexImages[alexIndex]}
         />
         <div className="portfolio-button-container">
-          <button>View On Github</button>
-          <button>View Project</button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://github.com/ItsChan-afk/alex-portfolio",
+                "_blank"
+              )
+            }
+          >
+            View On Github
+          </button>
+          <button
+            onClick={() => window.open("https://portfolio-for-alex.vercel.app")}
+          >
+            View Project
+          </button>
         </div>
       </div>
     </div>

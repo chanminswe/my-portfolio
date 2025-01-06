@@ -1,18 +1,11 @@
 import React from "react";
 import "../styles/Profile.css";
 
-//https://portfolio-for-alex.vercel.app/
-
-
 function Profile() {
   return (
     <div className="profile-container">
       <div className="picture-container">
-        <img
-          className="my-picture"
-          src="./images/me-2.png" /* Replace with your own profile picture URL */
-          alt="my-picture"
-        />
+        <img className="my-picture" src="./images/me-2.png" alt="my-picture" />
       </div>
 
       <div className="information-container">
@@ -26,15 +19,30 @@ function Profile() {
       </div>
 
       <div className="github-container">
-        <button className="github-button">View Github</button>
+        <button
+          onClick={() => {
+            window.open("https://github.com/chanminswe");
+          }}
+          className="github-button"
+        >
+          View Github
+        </button>
         <button className="cv-button">Download CV</button>
       </div>
-      <h3 style={{width: '100%' ,textAlign:'center' , marginTop:'30px' , color:'gray'}}>My Tech Stack</h3>
+      <h3
+        style={{
+          width: "100%",
+          textAlign: "center",
+          marginTop: "30px",
+          color: "gray",
+        }}
+      >
+        My Tech Stack
+      </h3>
       <Technology />
     </div>
   );
 }
-
 
 //for the technologies that I use
 
@@ -75,6 +83,15 @@ function Technology() {
           alt="Node.js Logo"
         />
         <h5>Node.js</h5>
+      </div>
+      <div className="tech-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+          alt="Express.js Logo"
+          width="150"
+        />
+
+        <h5>Express </h5>
       </div>
       <div className="tech-container">
         <img

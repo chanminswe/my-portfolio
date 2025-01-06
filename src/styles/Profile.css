@@ -1,4 +1,4 @@
-.profile-container{
+.profile-container {
     display: flex;
     width: 100%;
     height: auto;
@@ -6,61 +6,63 @@
     flex-wrap: wrap;
 }
 
-.picture-container{
+.picture-container {
     width: 70%;
     height: 350px;
     margin-top: 20px;
 }
 
-.my-picture{
+.my-picture {
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 20%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
-.information-container{
+.my-picture:hover {
+    transform: scale(1.05);
+}
+
+.information-container {
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: medium;
     width: 90%;
 }
 
-.information-container > p{
-    color: rgb(137, 136, 134);
+.information-container > p {
+    color: #6e6e6e;
 }
 
-.github-container{
+.github-container {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     width: 70%;
 }
 
-.github-container > button{
-    border: 1px solid black;
+.github-container > button {
+    border: 1px solid #ccc;
     width: 200px;
     border-radius: 5px;
-    padding : 10px;
+    padding: 10px;
     font-weight: bold;
-    transition: transform 0.3s ease-in;
-}
-
-.github-container > button:hover{
-    scale: 1.1;
-}
-.github-button{
     background-color: lightblue;
+    transition: transform 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-.cv-button{
+.github-container > button:hover {
+    transform: scale(1.05);
+    background-color: #add8e6;
+}
+
+.cv-button {
     background-color: white;
 }
 
-
-/*For Technology Component*/
-.technologies-container{  
+.technologies-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -69,13 +71,13 @@
     margin-top: 30px;
 }
 
-.tech-container{
+.tech-container {
     display: flex;
     justify-content: center;
     align-content: center;
-    width:200px;
+    width: 200px;
     height: 60px;
-    border: 1px solid #000000;
+    border: 1px solid #ccc;
     border-radius: 10px;
 }
 
@@ -83,18 +85,16 @@
     width: 50px;
     height: 100%;
     margin-right: 10px;
-    margin-left : 20px;
+    margin-left: 20px;
     object-fit: contain;
 }
 
-.tech-container > h5{
+.tech-container > h5 {
     width: 50%;
 }
 
-
-@media  (min-Width : 700px){
-
-    .profile-container{
+@media (min-width: 700px) {
+    .profile-container {
         display: flex;
         width: 100%;
         height: auto;
@@ -102,30 +102,29 @@
         flex-wrap: wrap;
     }
 
-    .picture-container{
+    .picture-container {
         width: 40%;
         height: 350px;
         margin-top: 20px;
     }
-    
 
-    .information-container{
+    .information-container {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Roboto', Arial, sans-serif;
         font-size: medium;
         width: 40%;
     }
 
-    .information-container > h2{
+    .information-container > h2 {
         width: 100%;
+        color: #2c3e50;
     }
-    
-    .github-container{
+
+    .github-container {
         margin-top: 30px;
     }
-    
 }
