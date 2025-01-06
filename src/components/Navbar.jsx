@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useState } from "react";
+import React, { Fragment, useContext, useEffect, useState } from "react";
 import "../styles/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +7,7 @@ import { ScreenContext } from "../context/ScreenContextProvider";
 function Navbar() {
   const { screenSize } = useContext(ScreenContext);
   const [isDropDown, setIsDropDown] = useState(false);
+
 
   return (
     <div className="nav-container">
