@@ -10,6 +10,7 @@ function Projects() {
     "./images/alex-home.png",
     "./images/alex-project.png",
     "./images/alex-vtubers.png",
+    "./images/alex-portfolio.png",
   ];
 
   // Change picture every 3 seconds
@@ -32,9 +33,8 @@ function Projects() {
       </div>
       <div className="project-explaination">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
-          blanditiis ullam! Vel et aliquid nesciunt numquam! Quis facere commodi
-          dolor!
+          This is a portfolio for my artist friend That I've written using React
+          , HTMl and CSS
         </p>
         <PortfolioButtons />
       </div>

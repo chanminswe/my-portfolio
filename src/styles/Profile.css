@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 20%;
+    border-radius: 40%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    width: 70%;
+    width: 100%;
 }
 
 .github-container > button {
@@ -49,13 +49,13 @@
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
-    background-color: lightblue;
+    background-color: #C1BAA1;
     transition: transform 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 .github-container > button:hover {
     transform: scale(1.05);
-    background-color: #add8e6;
+    background-color: #5f543b;
 }
 
 .cv-button {
@@ -77,7 +77,8 @@
     align-content: center;
     width: 200px;
     height: 60px;
-    border: 1px solid #ccc;
+    border: 1px solid #fcf4d7;
+    background-color: #D7D3BF;
     border-radius: 10px;
 }
 
@@ -100,6 +101,16 @@
         height: auto;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+    .github-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+        width: 80%;
+    }
+
+    .github-container > button {
+        padding: 15px 5px 15px;
     }
 
     .picture-container {

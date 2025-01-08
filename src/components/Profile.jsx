@@ -16,25 +16,24 @@ function Profile() {
           I’m eager to join a team where I can grow, collaborate, and contribute
           to meaningful projects.
         </p>
+        <div className="github-container">
+          <button
+            onClick={() => {
+              window.open("https://github.com/chanminswe");
+            }}
+            className="github-button"
+          >
+            View Github
+          </button>
+          <button className="cv-button">Download CV</button>
+        </div>
       </div>
 
-      <div className="github-container">
-        <button
-          onClick={() => {
-            window.open("https://github.com/chanminswe");
-          }}
-          className="github-button"
-        >
-          View Github
-        </button>
-        <button className="cv-button">Download CV</button>
-      </div>
       <h3
         style={{
           width: "100%",
           textAlign: "center",
           marginTop: "30px",
-          color: "gray",
         }}
       >
         My Tech Stack
