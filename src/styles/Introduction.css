@@ -15,16 +15,49 @@
 }
 
 .intro-image{
-    width: 80%;
+    width: 90%;
 }
 
 .intro-image > img {
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: contain;
 }
 
-@media (min-width: 700px) {
+.intro-button-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.intro-button-container > button { 
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 1s ease-in;
+}
+
+.intro-button-container > button:hover{
+    scale: 1.05;
+}
+
+.intro-cv{
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-github{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 600px) {
     .intro-text{
         padding-top: 30px;
         width: 40%;
@@ -32,7 +65,9 @@
     
     .intro-image{
         width: 40%;
-        border-radius: 50%;
     }
+
+    
+    
     
 }

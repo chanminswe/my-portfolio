@@ -17,8 +17,8 @@ function Introduction() {
           along the way.
         </p>
         <div className="intro-button-container">
-          <button>Download CV</button>
-          <button>View GitHub</button>
+          <button className="intro-cv">Download CV</button>
+          <button className="intro-github">View GitHub</button>
         </div>
       </div>
       <div className="intro-image">
