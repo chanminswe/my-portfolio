@@ -8,14 +8,13 @@ function Navbar() {
   const { screenSize } = useContext(ScreenContext);
   const [isDropDown, setIsDropDown] = useState(false);
 
-
   return (
     <div className="nav-container">
       <p className="my-name">Chan Min Swe</p>
-      {/* for responsive nav bar     */}
+
       {screenSize.screenWidth >= 500 ? (
         <div className="desktop-nav-container">
-          <p>About</p>
+          <p>Tech Stacks</p>
           <p>Projects</p>
         </div>
       ) : (
@@ -30,12 +29,13 @@ function Navbar() {
           />
           {isDropDown && (
             <div className="dropdown-container">
-              <div className="dropdown-item">About</div>
+              <div className="dropdown-item">Tech Stacks</div>
               <div className="dropdown-item">Projects</div>
             </div>
           )}
         </div>
       )}
+      <div className="for-night-mode"></div>
     </div>
   );
 }
