@@ -6,42 +6,42 @@ function TechStacks() {
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
       language: "HTML",
-      explaination: "Defines the structure of web pages.",
+      explaination: "Defines web page structure",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg",
       language: "CSS",
-      explaination: "Styles web pages visually.",
+      explaination: "Styles pages with design",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       language: "JavaScript",
-      explaination: "Adds interactivity to web pages.",
+      explaination: "Adds interactivity to pages",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       language: "React",
-      explaination: "Builds user interfaces for web apps.",
+      explaination: "Builds dynamic user interfaces",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       language: "Tailwind CSS",
-      explaination: "Utility-first CSS framework.",
+      explaination: "Utility-first CSS framework",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       language: "Node.js",
-      explaination: "JavaScript runtime for backend development.",
+      explaination: "Backend JavaScript runtime",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       language: "GitHub",
-      explaination: "Version control and collaboration platform.",
+      explaination: "Code hosting and collaboration",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
       language: "Express",
-      explaination: "Minimalist web framework for Node.js.",
+      explaination: "Node.js web application framework",
     },
   ];
 
