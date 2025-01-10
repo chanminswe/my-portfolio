@@ -1,3 +1,68 @@
 .projects-container{
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+.project{
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 40px;
+}
+
+.project-image{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 15px;
+    border-bottom: 1px solid black;
+}
+
+.project-paragraph{
+    font-size: 14px;
+    padding: 5px 14px 1px;
+    color: rgb(99, 96, 96);
+}
+
+.project-buttons{
+    margin: 10px 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-buttons > button {
+    padding: 10px;
+    width: 70px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.project-github-button{
+    background-color: gray;
+    color: white;
+    font: bold;
+}
+
+.project-live-button{
+    background-color: rgb(36, 36, 128);
+    color: white;
+    font: bold;
+}
+
+@media (min-width : 700px) {
+    .project{
+        width: 400px;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+        
 }
