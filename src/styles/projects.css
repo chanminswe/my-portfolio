@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     height: auto;
-    gap: 70px;
+    gap: 40px;
     margin-top: 10px;
 }
 
@@ -43,6 +43,12 @@
     width: 70px;
     border: 1px solid gray;
     border-radius: 15px;
+    transition: transform 0.4s ease-in;
+    
+}
+
+.project-buttons > button:hover{
+    transform: scale(1.1);
 }
 
 .project-github-button{
@@ -52,12 +58,18 @@
 }
 
 .project-live-button{
-    background-color: rgb(36, 36, 128);
+    background-color: rgb(57, 57, 213);
     color: white;
     font: bold;
 }
 
-@media (min-width : 700px) {
+@media (min-width : 500px) {
+
+    .projects-container{
+       
+        gap: 70px;
+        margin-top: 10px;
+    }
     .project{
         width: 400px;
         height: auto;

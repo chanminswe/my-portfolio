@@ -19,12 +19,19 @@ function Projects() {
         </p>
         <div className="project-buttons">
           <button
-            onClick={() => window.open("")}
+            onClick={() => window.open("https://exam-frontend-nu.vercel.app/")}
             className="project-live-button"
           >
             Live
           </button>
-          <button className="project-github-button">GitHub</button>
+          <button
+            onClick={() =>
+              window.open("https://github.com/chanminswe/exam-manager")
+            }
+            className="project-github-button"
+          >
+            GitHub
+          </button>
         </div>
       </div>
       <div className="project">
@@ -42,12 +49,19 @@ function Projects() {
         </p>
         <div className="project-buttons">
           <button
-            onClick={() => window.open("")}
+            onClick={() => window.open("https://portfolio-for-alex.vercel.app")}
             className="project-live-button"
           >
             Live
           </button>
-          <button className="project-github-button">GitHub</button>
+          <button
+            onClick={() =>
+              window.open("https://github.com/ItsChan-afk/alex-portfolio")
+            }
+            className="project-github-button"
+          >
+            GitHub
+          </button>
         </div>
       </div>
     </div>

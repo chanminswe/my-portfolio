@@ -10,10 +10,18 @@ function App() {
       <Navbar />
       <Introduction />
       <TechStacks />
-      <h2 style={{ width: "100%", textAlign: "center", color: "orange" , marginTop: "30px" }}>
-        My Projects
-      </h2>
-
+      <p
+        style={{
+          width: "100%",
+          textAlign: "center",
+          color: "darkred",
+          marginTop: "80px",
+          fontSize: "24px", 
+          fontWeight : '400'
+        }}
+      >
+        Projects I've Worked on
+      </p>
       <Projects />
     </>
   );

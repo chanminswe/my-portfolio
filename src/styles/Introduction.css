@@ -15,7 +15,8 @@
 }
 
 .intro-image{
-    width: 90%;
+    width: 100%;
+    padding: 10px;
 }
 
 .intro-image > img {
