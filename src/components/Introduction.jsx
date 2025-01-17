@@ -22,7 +22,7 @@ function Introduction() {
         </div>
       </div>
       <div className="intro-image">
-        <img src="./images/my-pic.jpg" alt="my-picture" />
+        <img src="./images/my-image.jpg" alt="my-picture" />
       </div>
     </div>
   );
